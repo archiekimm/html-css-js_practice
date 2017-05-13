@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* reset */
+body {font:normal 12px "애플고딕", AppleGothic, "돋움", dotum, Arial, Verdana, sans-serif; line-height:1.4; color:#666666; margin:30px; padding:0; letter-spacing:-1px;}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {font-size:1em; margin:0; padding:0;}
+ul, ol {list-style:none;}
+strong {display:block; color:#2f3743;}
+span {display:block; font-size:11px; color:#878787;}
+em {display:block; font-size:11px; color:#ababab; font-style:normal;}
+b {display:block; font-weight:normal; color:#354f8c;}
+a {text-decoration:none; color:#2f3743;}
+a:hover, a:hover b, a:hover em, a:hover span, a:hover strong {text-decoration:underline; color:#329900;}
+
+/* layout */
+.navercast {width:593px; height:493px; border:1px solid #d5d5d5; position:relative;}
+.tab_menu {height:42px; padding:3px 29px 0; background-color:#f9f9f9; border-bottom:1px solid #e6e6e6; overflow:hidden;}
+.main {padding:0 29px; background-color:#ffffff;}
+
+/* tab menu */
+.tab_menu > a {background-color:#f9f9f9; width:29px; height:45px; position:absolute; top:0; text-align:center;}
+.tab_menu > a img {margin-top:19px; opacity:0.5;}
+.tab_menu a.prev {left:0;} .tab_menu a.next {right:0;}
+.tab_menu a.prev:hover img {opacity:1;} 
+.tab_menu a.prev:active img {opacity:0.5;}
+.tab_menu a.next:hover img {opacity:1;} 
+.tab_menu a.next:active img {opacity:0.5;}
+.tab_menu ul {transition:all 0.1s ease;}
+.tab_menu li a {float:left; width:52px; height:39px; background:url('../images/tab_menu.png') no-repeat;}
+.tab_menu .tab2 a {background-position-x:-52px;}
+.tab_menu .tab3 a {background-position-x:-104px;}
+.tab_menu .tab4 a {background-position-x:-156px;}
+.tab_menu .tab5 a {background-position-x:-208px;}
+.tab_menu .tab6 a {background-position-x:-260px;}
+.tab_menu .tab7 a {background-position-x:-312px;}
+.tab_menu .tab8 a {background-position-x:-364px;}
+.tab_menu .tab9 a {background-position-x:-416px; width:67px;}
+.tab_menu .tab10 a {background-position-x:-483px;}
+.tab_menu .tab11 a {background-position-x:-535px;}
+.tab_menu .tab12 a {background-position-x:-587px;}
+.tab_menu .tab13 a {background-position-x:-639px;}
+.tab_menu .on a {background-position-y:-39px;}
+
+/* main common */
+.blind {display:block; text-indent:-999999px; overflow:hidden;}
+.weight_normal {letter-spacing:0; font-weight:normal;}
+.contents h3 {margin-bottom:9px; overflow:hidden;}
+.contents h3 a {display:inline-block; padding-right:8px; background:url('../images/arr_more.gif') no-repeat right 3px;}
+.contents h3 img {border:none; width:auto; height:auto;}
+.contents h3 strong {display:inline-block; padding-left:7px; line-height:12px; vertical-align:top;}
+.contents .top {margin:15px 0 19px; overflow:hidden;}
+.grid2 .left, .grid2 .right {float:left; width:255px;}
+.grid2 .right {margin-left:25px;}
+.grid2 .col li + li {margin-left:15px;} 
+.grid4 .col li + li {margin-left:18px;}
+.col li {float:left; width:120px;} 
+.col img {width:100%;} 
+.col strong {margin:10px 0 2px;}
+.row {font-size:0;}
+.row a > * {display:inline-block; font-size:12px; vertical-align:middle;}
+.row img {margin-right:12px;}
+.row strong {margin-bottom:3px;}
+.row li + li {margin-top:14px;}
+.textlist li {clear:both; height:21px;}
+.textlist li:first-child img {float:left; margin:0 10px 16px 0;}
+.textlist li:first-child strong {padding:3px 0 6px; letter-spacing:-1px; font-weight:bold;}
+.textlist b {display:inline; padding-right:3px; letter-spacing:-1px;}
+.subject {position:absolute; bottom:11px; left:29px;}
+.subject h3, .subject ul, .subject li {float:left; line-height:14px;}
+.subject li a {display:block; padding:0 7px; background:url('../images/line.gif') no-repeat 0 2px;}
+.subject li:first-child a {padding-left:10px; background:none;}
+.subject .set {display:block; clear:left; margin-top:20px; padding-left:22px; line-height:18px; color:#848689; font-size:11px; background:url('../images/btn_set.gif') no-repeat;}
+.pages {position:absolute; bottom:10px; right:15px;}
+.pages span {float:left; font-family:verdana; letter-spacing:0px; color:#b3b3b3; line-height:19px; margin-right:5px;}
+.pages em {float:left; color:#7b8191;}
+.pages a {float:left; background:url('../images/arr_page.gif') no-repeat; width:21px; height:19px;}
+.pages a.next {background-position:-21px 0; width:20px;}
+
+/* exception */
+.car .row li + li, .toon .row li + li {margin-top:12px;} 
+.toon .special {position:relative; text-align:center; font-size:11px; background:url('../images/bg_toon_stand.png') no-repeat 0 21px;}
+.toon .special h3 a {background:none; float:left; padding-right:7px;}
+.toon .special h3 a + a {background:url('../images/line.gif') no-repeat 0 1px; padding-left:6px;}
+.toon .special li img {width:68px; height:98px; padding-bottom:10px;}
+.toon .special li a {float:left; width:76px; position:relative;}
+.toon .special li + li > a {margin-left:10px;}
+.toon .special li:first-child > a {margin-left:4px;}
+.toon .special .toonframe {display:block; width:76px; height:98px; background:url('../images/frame_68x98.png') no-repeat; position:absolute; top:0; left:0;}
+.toon .special .more {position:absolute; top:-1px; right:0; color:#abb0b5; font-size:11px; padding-right:7px; background:url('../images/arr_more_style2.gif') no-repeat right 4px;}
