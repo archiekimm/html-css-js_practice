@@ -8,6 +8,8 @@
 <meta name="description" content="웹디자인을 비롯한 여러가지 디자인을 진행하는 회사">
 <meta name="author" content="Arom Kim">
 <link rel="stylesheet" media="screen" href="css/fd.css">
+<script src="js/jquery-1.12.3.js"></script>
+<script src="js/visual.slider.js"></script>
 </head>
 
 <body>
@@ -38,13 +40,8 @@
 		</div>
 		<section class="visual">
 			<h1 class="blind">스터디 케이스</h1>
-			<div class="control">
-				<a href="#" class="blind active">DHL</a>
-				<a href="#" class="blind">Volkswagen</a>
-				<a href="#" class="blind">23andMe</a>
-			</div>
 			<ul class="pannel">
-				<li style="display:block;" class="on">
+				<li>
 					<img src="images/01_Audi.jpg">
 					<div class="desc">
 						<h2>DHL</h2>
@@ -52,7 +49,7 @@
 						<a href="#" class="read_the_story"><span>Read the story</span></a>
 					</div>
 				</li>
-				<li style="display:none;">
+				<li>
 					<img src="images/02_mcafee.jpg">
 					<div class="desc">
 						<h2>Volkswagen</h2>
@@ -60,7 +57,7 @@
 						<a href="#" class="read_the_story"><span>Read the story</span></a>
 					</div>
 				</li>
-				<li style="display:none;">
+				<li>
 					<img src="images/03_sony.jpg">
 					<div class="desc">
 						<h2>23andMe</h2>
@@ -69,10 +66,6 @@
 					</div>
 				</li>
 			</ul>
-			<div class="arrow">
-				<a href="#" class="prev blind">이전</a>
-				<a href="#" class="next blind">다음</a>
-			</div>
 		</section>
 		<seciton class="contents about_us">
 			<h2>About us</h2>
@@ -261,7 +254,6 @@
 	</footer>
 </div>
 
-<script src="js/visual.js" type="text/javascript"></script>
 </body>
 </html>
 
